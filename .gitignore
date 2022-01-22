@@ -1,0 +1,6 @@
+
+/alt/*
+
+/__pycache__/*
+
+.env
