@@ -10,8 +10,4 @@ python-dotenv = "*"
 requests = "*"
 pymongo = {extras = ["srv"], version = "*"}
 lxml = "*"
-
-[dev-packages]
-
-[requires]
-python_version = "3.10"
+pytelegrambotapi = "*"

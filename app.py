@@ -12,6 +12,8 @@ from WatchTimestamp import WatchTimestamp
 ENV = dotenv.dotenv_values()
 DB_URI = ENV["DB_URI"]
 URL = ENV["URL"]
+TG_API_KEY = ENV["TELEGRAM_API_KEY"]
+TG_CHAT_ID = ENV["CHAT_ID"]
 
 TIMEOUT_SECONDS = 60*60
 
