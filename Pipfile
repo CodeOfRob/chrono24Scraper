@@ -11,3 +11,4 @@ requests = "*"
 pymongo = {extras = ["srv"], version = "*"}
 lxml = "*"
 pytelegrambotapi = "*"
+requests-html = "*"
