@@ -38,6 +38,7 @@ def fetch_offers(db, tg, doc):
         count += 1
 
     print("pushed", count, "new offer snapshots")
+    tg.send_msg(f"pushed {count} new offer snapshots")
 
 
 def main():

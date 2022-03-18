@@ -21,9 +21,10 @@ class WatchOffer:
         self.fetch_details()
 
     def fetch_details(self):
+        print("fetching:", self.url)
         session = HTMLSession()
         doc = session.get(self.url)
-        doc.html.render()
+        doc.html.render(timeout=60)
 
         page_content = bs4.BeautifulSoup(doc.html.raw_html, "lxml")
         # print(page_content)
