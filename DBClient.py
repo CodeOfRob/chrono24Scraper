@@ -9,7 +9,7 @@ class DBClient:
         self.uri = uri
         self.client = pymongo.MongoClient(self.uri)
         self.watchTimestamp_collection = self.client.rku.watchtimestamps
-        self.watchSnapshot_collection = self.client.rku.watchoffersnapshot
+        self.watchSnapshot_collection = self.client.rku.watchoffersnapshots
 
     def push_watchTimestamp(self, wt: WatchTimestamp):
         self.watchTimestamp_collection.insert_one(wt.pushable())
