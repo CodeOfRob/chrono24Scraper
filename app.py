@@ -1,10 +1,11 @@
-import time
 import json
+import time
 import typing
-import requests
+
 import bs4
-import numpy
 import dotenv
+import numpy
+import requests
 
 from DBClient import DBClient
 from WatchTimestamp import WatchTimestamp

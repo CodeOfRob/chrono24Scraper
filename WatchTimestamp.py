@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class WatchTimestamp:
 
     def __init__(self, currency: str, offers_count: int, price_stats: object):

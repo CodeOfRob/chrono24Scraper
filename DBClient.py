@@ -1,7 +1,8 @@
 import pymongo
-from WatchOffer import WatchOffer
 
-from WatchTimestamp import WatchTimestamp 
+from WatchOffer import WatchOffer
+from WatchTimestamp import WatchTimestamp
+
 
 class DBClient:
 

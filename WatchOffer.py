@@ -1,6 +1,8 @@
 from datetime import datetime
-from requests_html import HTMLSession
+
 import bs4
+from requests_html import HTMLSession
+
 
 class WatchOffer:
 
@@ -67,4 +69,5 @@ class WatchOffer:
 
        
         desc_rows = desc.find_all("tr")
-        self.description = desc_rows[1].text.strip()
+        if len(desc_rows)>=2:
+            self.description = desc_rows[1].text.strip()

@@ -1,11 +1,14 @@
 import json
+
 import bs4
 import requests
 
+from app import (DB_URI, TG_API_KEY, TG_CHAT_ID, URL, create_watchTimestamp,
+                 extract_prices)
 from DBClient import DBClient
-from WatchOffer import WatchOffer
-from app import DB_URI, TG_API_KEY, TG_CHAT_ID, URL, create_watchTimestamp, extract_prices
 from telegram.telegram import TelegramService
+from WatchOffer import WatchOffer
+
 
 def fetch_timestamps(db, tg, doc):
     # extract watchTimestamps
